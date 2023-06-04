@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Captcha</title>
+</head>
+<body>
+{{#captcha}}
+    <h2>{{captcha}}</h2>
+{{/captcha}}
+<form method="post">
+    <input name="captcha" type="hidden" value="{{captcha}}">
+    <input name="answer" type="text" placeholder="Enter text">
+    <input type="submit">
+</form>
+{{#res}}
+    <h2>{{res}}</h2>
+{{/res}}
+<div>
+    <a href="/">Main page</a>
+</div>
+</body>
+</html>
